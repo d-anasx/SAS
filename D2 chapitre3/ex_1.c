@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int countDigits(int number) {
+int counter(int number) {
     int count = 0;
     if (number == 0) return 1; 
     while (number != 0) {
@@ -37,7 +37,7 @@ int main() {
    int size = sizeof(arr) / sizeof(arr[0]);
    
    for (int i = 0; i < size; i++) {
-       totalDigits += countDigits(arr[i]);
+       totalDigits += counter(arr[i]);
     }
 
  }
